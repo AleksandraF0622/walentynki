@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druga strona</title>
+    <style>
+        body {
+            background: #FCF4F9; /* Fallback color */
+            background: linear-gradient(to bottom, #F7E5F1, #FCF4F9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="mainImage" src="https://i.imgur.com/tBvc8z6.png" alt="Główny obraz">
+
+    <script>
+        document.getElementById('mainImage').addEventListener('click', function() {
+            this.src = "https://i.imgur.com/VkRIo3v.gif"; // Zmiana obrazka na animowany gif po kliknięciu
+        });
+    </script>
+</body>
+</html>
